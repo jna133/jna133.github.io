@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile | ABC Logistics</title>
+    <style>
+        :root {
+            --primary-bg: #f8fafc;
+            --navbar-bg: #1e293b;
+            --accent-color: #10b981;
+            --text-main: #334155;
+            --white: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--primary-bg); color: var(--text-main); line-height: 1.6; }
+
+        /* Simplified Navbar */
+        nav {
+            background-color: var(--navbar-bg);
+            color: var(--white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav h1 { font-size: 1.25rem; letter-spacing: 1px; }
+
+        .menu-links { list-style: none; display: flex; gap: 30px; }
+        .menu-links li a { 
+            color: var(--white); 
+            text-decoration: none; 
+            font-size: 0.95rem; 
+            opacity: 0.7; 
+            transition: all 0.3s ease; 
+            padding-bottom: 5px;
+        }
+        .menu-links li a:hover { opacity: 1; }
+        .menu-links li a.active { opacity: 1; border-bottom: 2px solid var(--accent-color); }
+
+        .container { max-width: 800px; margin: 3rem auto; padding: 0 1rem; }
+
+        .profile-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-header { margin-bottom: 2rem; }
+        .profile-header h2 { font-size: 2rem; color: var(--navbar-bg); margin-bottom: 0.5rem; }
+        
+        .badge {
+            display: inline-block;
+            background-color: #ecfdf5;
+            color: var(--accent-color);
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .bio-section { text-align: left; margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 2rem; }
+        .bio-section h3 { color: var(--navbar-bg); margin-bottom: 1rem; }
+        .bio-section p { margin-bottom: 1.2rem; color: #475569; }
+
+        .interests-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .interest-item { background: #f1f5f9; padding: 1rem; border-radius: 6px; font-size: 0.9rem; font-weight: 500; text-align: center; }
+
+        footer { margin-top: 3rem; text-align: center; font-size: 0.8rem; color: #94a3b8; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>ABC LOGISTICS</h1>
+        <ul class="menu-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="about.html" class="active">Developer Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="badge">Lead Developer</div>
+                <h2>Jimmy Nguyen</h2>
+                <p style="color: #64748b;">Computer Science Student | Surrey, BC</p>
+            </div>
+
+            <div class="bio-section">
+                <h3>Developer Biography</h3>
+                <p>
+                    I am a <strong>Computer Science student</strong> dedicated to crafting intuitive digital tools for 
+                    logistics management. This dashboard was designed for Sarah at ABC Logistics to provide 
+                    real-time data visualization and persistent inventory tracking.
+                </p>
+                <p>
+                    Based in Surrey, British Columbia, my work focuses on bridging the gap between complex 
+                    backend logic and clean, accessible user interfaces.
+                </p>
+
+                <h3>Skills & Focus Areas</h3>
+                <div class="interests-grid">
+                    <div class="interest-item">💻 Software Engineering</div>
+                    <div class="interest-item">📈 Chart.js Integration</div>
+                    <div class="interest-item">🛠 UI/UX Design</div>
+                    <div class="interest-item">💾 Data Persistence</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 ABC Logistics Dashboard Project
+        </footer>
+    </div>
+
+</body>
+</html>
